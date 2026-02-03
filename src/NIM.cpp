@@ -21,8 +21,8 @@ bool isValidMove(int userMove, int stones) {
 int getUserMove(int stones) {
     int userMove;
     while (true) {
-        std::cout << "How many stones would you like to take (1-3)? ";
-        std::cin >> userMove;
+        cout << "How many stones would you like to take (1-3)? ";
+        cin >> userMove;
         if (isValidMove(userMove, stones)) {
             return userMove;
         } else {
